@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#F3F5F7">
-  <meta name="description" content="SEA LIVERY — отборная рыба, икра и морепродукты с доставкой по Батуми. Каталог, заказ онлайн и предложения для подписчиков.">
+  <meta name="description" content="SEA LIVERY — отборная рыба, икра и морепродукты с доставкой по Батуми. Каталог, заказ онлайн и специальные предложения для подписчиков.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="SEA LIVERY · Premium Seafood · Batumi">
   <meta property="og:description" content="Свежесть моря. Эстетика продукта. Рыба, морепродукты и икра с доставкой по Батуми.">
@@ -37,10 +37,10 @@
     .intro{text-align:center;padding:0 3px;margin-bottom:16px}
     h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(42px,10vw,51px);line-height:.95;letter-spacing:-.018em;font-weight:500;margin:19px auto 12px}
     h1 em{font-style:normal;color:var(--blue)}
-    .tagline{font-size:12px;line-height:1.7;color:var(--muted);margin:0 auto;max-width:330px}
-    .visual{position:relative;overflow:hidden;border-radius:15px;height:224px;background:#d6e4eb;box-shadow:0 12px 28px rgba(11,33,67,.08)}
-    .visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 49%}
-    .visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 68%,rgba(12,35,63,.35) 100%);pointer-events:none}
+    .tagline{font-size:12px;line-height:1.7;color:var(--muted);margin:0 auto;max-width:340px}
+    .visual{position:relative;overflow:hidden;border-radius:15px;height:232px;background:#d6e4eb;box-shadow:0 12px 28px rgba(11,33,67,.08)}
+    .visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 50%}
+    .visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.02) 0%,transparent 52%,rgba(12,35,63,.33) 100%);pointer-events:none}
     .visual-note{position:absolute;left:17px;bottom:15px;z-index:1;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:white;font-weight:600;text-shadow:0 2px 8px rgba(0,0,0,.35)}
     .sales-actions{display:grid;gap:10px;margin-top:18px}
     .action{display:flex;align-items:center;gap:13px;min-height:68px;border-radius:12px;background:white;
@@ -56,25 +56,32 @@
     .action--main .ic,.action--main .arrow{stroke:#E6C879}
     .action--main small{color:#C7D1DE}
     .action--promo{background:#FFFEFB;border-color:rgba(212,175,55,.6)}
+    .action--whatsapp{background:#FFFFFF;border-color:#D5E5DC}
+    .action--whatsapp .ic{stroke:#2A9365}
     .channel-note{text-align:center;color:#647286;font-size:10px;line-height:1.5;margin:3px 7px 0}
     .channel-note strong{color:var(--gold-dark);font-weight:600}
-    .usp-heading{display:flex;align-items:center;justify-content:center;gap:12px;white-space:nowrap;color:var(--gold-dark);font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;margin:26px auto 13px}
-    .usp-heading::before,.usp-heading::after{content:"";flex:1;max-width:55px;height:1px;background:rgba(212,175,55,.6)}
+    .section-heading{display:flex;align-items:center;justify-content:center;gap:12px;white-space:nowrap;color:var(--gold-dark);font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;margin:26px auto 13px}
+    .section-heading::before,.section-heading::after{content:"";flex:1;max-width:55px;height:1px;background:rgba(212,175,55,.6)}
     .trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
     .trust-item{border-radius:11px;border:1px solid #E5E7E8;background:rgba(255,255,255,.82);padding:14px 7px 13px;min-height:94px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:9px}
     .trust svg{height:24px;width:24px;fill:none;stroke:var(--gold-dark);stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round}
     .trust span{font-size:10px;font-weight:600;line-height:1.42;color:var(--navy)}
-    .contact{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:23px;color:var(--blue);font-size:11px;font-weight:500}
-    .contact a{border-bottom:1px solid rgba(29,53,87,.32);padding-bottom:2px}
-    .socials{display:flex;justify-content:center;align-items:center;gap:12px;margin:22px auto 14px}
-    .social{width:41px;height:41px;display:grid;place-items:center;border:1px solid #D8DDE3;border-radius:100%;background:white;transition:transform .2s,border-color .2s}
-    .social:hover{border-color:var(--gold-dark);transform:translateY(-2px)}
-    .social svg{width:20px;height:20px;stroke:var(--navy);stroke-width:1.55;fill:none;stroke-linecap:round;stroke-linejoin:round}
-    .footer{text-align:center}
-    .foot-loc{color:#718094;font-size:10px;letter-spacing:.09em;margin-top:5px}
+    .social-grid{display:grid;gap:10px;margin-top:2px}
+    .social-card{display:flex;align-items:center;gap:13px;border-radius:12px;border:1px solid #DCE1E7;background:rgba(255,255,255,.92);padding:13px 15px;box-shadow:0 5px 14px rgba(11,33,67,.025);transition:transform .2s,border-color .2s,box-shadow .2s}
+    .social-card:hover{border-color:#BE9C59;box-shadow:0 7px 20px rgba(11,33,67,.06)}
+    .social-card:active{transform:scale(.988)}
+    .social-icon{width:42px;height:42px;display:grid;place-items:center;flex:none;border-radius:11px;background:#FBF8F0;border:1px solid #F0E2B4}
+    .social-icon svg{width:21px;height:21px;stroke:var(--navy);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .social-text{flex:1;min-width:0}
+    .social-text strong{display:block;font-size:13.5px;line-height:1.3;font-weight:600}
+    .social-text small{display:block;margin-top:4px;font-size:10.5px;line-height:1.45;color:#667687;font-weight:500}
+    .social-card .arrow{flex:none;height:18px;width:18px;stroke:var(--gold-dark);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .footer{text-align:center;margin-top:22px}
+    .foot-line{height:1px;width:110px;background:linear-gradient(90deg,transparent,var(--gold-dark),transparent);margin:0 auto 12px}
+    .foot-loc{color:#5F6D7C;font-size:10px;letter-spacing:.18em;margin-top:0;text-transform:uppercase}
     .foot-note{color:#9BA6AE;letter-spacing:.08em;font-size:9px;margin-top:13px}
     @media(min-width:520px){.page{margin:24px auto;border-radius:23px;border:1px solid #E6E2DA;box-shadow:0 20px 60px rgba(11,33,67,.08);padding:28px 29px 33px}}
-    @media(max-width:370px){.page{padding-left:16px;padding-right:16px}.visual{height:200px}.wordmark{font-size:36px}h1{font-size:40px}.action strong{font-size:12px}.action small{font-size:9.3px}}
+    @media(max-width:370px){.page{padding-left:16px;padding-right:16px}.visual{height:208px}.wordmark{font-size:36px}h1{font-size:40px}.action strong,.social-text strong{font-size:12px}.action small,.social-text small{font-size:9.3px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
   </style>
 </head>
@@ -92,31 +99,40 @@
     <p class="tagline">Отборная сёмга, икра и морепродукты<br>с доставкой по Батуми и ближайшим районам.</p>
   </section>
 
-  <section class="visual" aria-label="Фирменная предметная съёмка морепродуктов">
-    <img src="assets/seafood-editorial.webp" alt="Креветки и морепродукты на светлой керамической тарелке" width="1000" height="610" fetchpriority="high">
+  <section class="visual" aria-label="Фирменная съёмка ассортимента SEA LIVERY">
+    <img src="assets/seafood-editorial-v2.webp" alt="Лосось, креветки, мидии, кальмары и другие морепродукты SEA LIVERY в тёплом свете" width="960" height="720" fetchpriority="high">
     <span class="visual-note">SEA LIVERY · BATUMI</span>
   </section>
 
-  <nav class="sales-actions" aria-label="Каталог, спецпредложения и заказ">
+  <nav class="sales-actions" aria-label="Каталог, спецпредложения и контакты">
     <a class="action action--main" href="https://sealivery.ge/?utm_source=sea_livery_bio&amp;utm_medium=referral&amp;utm_campaign=always_on&amp;utm_content=main_catalog" aria-label="Открыть каталог SEA LIVERY и оформить заказ">
       <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1.3 12H5.3L4 8Z"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
       <span class="text"><strong>Выбрать и заказать</strong><small>Каталог · актуальные цены и наличие</small></span>
       <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
     </a>
+
     <a class="action action--promo" href="https://www.instagram.com/channel/AbZ_jrucHEnAUus2/" target="_blank" rel="noopener noreferrer" aria-label="Открыть Instagram-канал со специальными предложениями">
       <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h4l9-5v15l-9-5H3V9Z"/><path d="m8 14 2 6h3l-2-5M19 8l2-2M19 14l2 2"/></svg>
-      <span class="text"><strong>Акции для своих</strong><small>Еженедельные спецпредложения в канале</small></span>
+      <span class="text"><strong>Акции для своих</strong><small>Еженедельные спецпредложения в Instagram-канале</small></span>
       <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M9 7h8v8"/></svg>
     </a>
+
     <p class="channel-note">Промокоды и специальные цены — <strong>только в Instagram-канале</strong>.</p>
+
+    <a class="action action--whatsapp" href="https://wa.me/995568997063?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9F%D0%B8%D1%88%D1%83%20%D0%BF%D0%BE%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%83%20B2B%2C%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D1%82%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%20%D0%B2%20SEA%20LIVERY." target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp по вопросам B2B, сотрудничества и консультации">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.3A8.5 8.5 0 0 1 7 18.7L3 20l1.4-3.8A8.5 8.5 0 1 1 20 11.3Z"/><path d="M9.2 8.8c.3-.7.6-.7.8-.7h.6c.2 0 .4 0 .5.4l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.1.1-.2.3-.1.5.3.7 1 1.6 2.1 2.3.2.1.4.1.5 0l.6-.7c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5v.5c0 .2 0 .6-.7.9-.7.3-1.7.4-3.2-.2-1.8-.7-3.7-2.6-4.5-4.4-.7-1.6-.6-2.6-.2-3.1Z"/></svg>
+      <span class="text"><strong>WhatsApp для B2B</strong><small>Сотрудничество, опт, блогеры и бизнес-консультации</small></span>
+      <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M9 7h8v8"/></svg>
+    </a>
+
   </nav>
 
   <section aria-labelledby="usp-heading">
-    <div class="usp-heading" id="usp-heading">Почему SEA LIVERY</div>
+    <div class="section-heading" id="usp-heading">Почему SEA LIVERY</div>
     <div class="trust">
       <div class="trust-item">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18c5-3 9-9 15-12"/><path d="M6 16C3 11 5 7 11 5c5-2 8-2 9-2 0 4-1 11-5 15-3 3-7 3-9-2Z"/></svg>
-        <span>Отбираем<br>продукты</span>
+        <span>Отборные<br>морепродукты</span>
       </div>
       <div class="trust-item">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 6 3.5 9 8 11 4.5-2 8-5 8-11V5l-8-3Z"/><path d="m8 12 2.5 2.5L16 9"/></svg>
@@ -129,15 +145,32 @@
     </div>
   </section>
 
-  <div class="contact">Нужна помощь с выбором? <a href="tel:+995568997063" aria-label="Позвонить SEA LIVERY по номеру +995 568 997 063">Позвоните нам ↗</a></div>
+  <section aria-labelledby="social-heading">
+    <div class="section-heading" id="social-heading">Где нас смотреть</div>
+    <div class="social-grid">
+      <a class="social-card" href="https://www.instagram.com/sea_livery/" target="_blank" rel="noopener noreferrer" aria-label="Перейти в Instagram SEA LIVERY">
+        <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span>
+        <span class="social-text"><strong>Instagram</strong><small>Фото, видео, новинки и консультация в Direct</small></span>
+        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M9 7h8v8"/></svg>
+      </a>
+
+      <a class="social-card" href="https://www.threads.com/@sea_livery?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" aria-label="Перейти в Threads SEA LIVERY">
+        <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16.4 9.4C16 7 14 5.8 11.7 5.8c-3.6 0-5.8 2.8-5.8 6.3 0 4.2 2 6.9 5.8 6.9 3.7 0 5.9-2 5.9-4.8 0-2.3-1.7-3.7-5-3.7-2.2 0-3.5.9-3.5 2.5 0 1.4 1 2.2 2.5 2.2 2.2 0 3.5-1.7 3.5-4.6 0-3.3-2-5.4-5.9-5.4"/></svg></span>
+        <span class="social-text"><strong>Threads</strong><small>Больше контента, живые обновления и внутренняя кухня бренда</small></span>
+        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M9 7h8v8"/></svg>
+      </a>
+
+      <a class="social-card" href="https://t.me/sea_livery_bot?startapp" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram Mini App SEA LIVERY">
+        <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m21 4-4 16-5.3-4-3 2.5.6-4.4L20.5 5 6 12.5 3 11Z"/></svg></span>
+        <span class="social-text"><strong>Telegram бот</strong><small>Быстрый вход в mini app и дополнительная точка контакта</small></span>
+        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 17 10-10M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </section>
 
   <footer class="footer">
-    <div class="socials" aria-label="Социальные сети SEA LIVERY">
-      <a class="social" href="https://www.instagram.com/sea_livery/" target="_blank" rel="noopener noreferrer" aria-label="Instagram SEA LIVERY"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
-      <a class="social" href="https://www.threads.com/@sea_livery?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener noreferrer" aria-label="Threads SEA LIVERY"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 9.4C16 7 14 5.8 11.7 5.8c-3.6 0-5.8 2.8-5.8 6.3 0 4.2 2 6.9 5.8 6.9 3.7 0 5.9-2 5.9-4.8 0-2.3-1.7-3.7-5-3.7-2.2 0-3.5.9-3.5 2.5 0 1.4 1 2.2 2.5 2.2 2.2 0 3.5-1.7 3.5-4.6 0-3.3-2-5.4-5.9-5.4"/></svg></a>
-      <a class="social" href="https://t.me/sea_livery_bot?startapp" target="_blank" rel="noopener noreferrer" aria-label="Telegram SEA LIVERY"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 4-4 16-5.3-4-3 2.5.6-4.4L20.5 5 6 12.5 3 11Z"/></svg></a>
-    </div>
-    <div class="foot-loc">БАТУМИ · ГРУЗИЯ</div>
+    <div class="foot-line" aria-hidden="true"></div>
+    <div class="foot-loc">БАТУМИ · МОРЕ · ВКУС · КАЧЕСТВО</div>
     <div class="foot-note">© SEA LIVERY · PREMIUM SEAFOOD</div>
   </footer>
 </main>
